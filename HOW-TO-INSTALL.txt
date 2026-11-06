@@ -1,0 +1,37 @@
+PERSONAL WALLET ON YOUR IPHONE (free, no App Store)
+===================================================
+
+What's in this folder: index.html (the whole app), sw.js (offline support), manifest.webmanifest and icons.
+Upload ALL of them (not this text file - that's optional).
+
+1. PUT IT ONLINE (once, on your Windows laptop, ~10 minutes)
+   a. Go to github.com and create a free account (if you don't have one).
+   b. Top right "+" -> New repository. Name: wallet. Choose Public. Click "Create repository".
+      (Public means the app's code can be seen. Your money data never goes there; it stays on your iPhone.)
+   c. On the new repository page click "uploading an existing file".
+      Drag in every file from this folder. Click "Commit changes".
+   d. Settings -> Pages (left menu). Under "Build and deployment": Source = Deploy from a branch,
+      Branch = main, folder = / (root). Click Save.
+   e. Wait 1-2 minutes and refresh. It shows "Your site is live at https://YOUR-NAME.github.io/wallet/"
+
+2. INSTALL ON IPHONE
+   a. Open that link in Safari (not Chrome).
+   b. Tap Share (square with arrow) -> "Add to Home Screen" -> Add.
+   c. From now on open it ONLY from the Personal Wallet icon. The icon and the Safari tab keep separate data.
+
+3. BRING YOUR DATA FROM THE TEST VERSION (optional)
+   a. In the Claude test page: Settings -> Back up -> save the file to Files / iCloud Drive.
+   b. In the installed app: on the welcome card tap "Bring my data from a backup" (or Settings -> Restore from backup)
+      and pick that file.
+
+4. KEEP IT SAFE
+   - Data lives only on the iPhone. Every 2 weeks the app reminds you: Settings -> Back up -> Save to Files / iCloud Drive.
+   - Works offline. Weather/AQI need internet.
+
+5. UPDATING TO A NEW VERSION
+   In the GitHub repository, "Add file" -> "Upload files", drop the new index.html (and any changed files), Commit.
+   Open the app while online; it picks up the new version (close and reopen once if needed). Your data stays.
+
+Not available in this version (needs the App Store build): haptics, reading bills/prescriptions from photos
+(you type the details instead), copy in your Claude account. Voice uses Safari's speech recognition where iPhone allows it;
+otherwise use the mic on the keyboard.
